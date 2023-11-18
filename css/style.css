@@ -1,15 +1,43 @@
-/* ****************************** 
-***       Global CSS          ***
-************************8******* */
+/**********************
+    Global Css Start  
+***********************/
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
+
     font-size: 16px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+a,
+a:hover {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -19,301 +47,562 @@ body {
 
 }
 
-ul {
-    margin: 0;
+
+
+/*************************
+    Global Css End  
+ ************************/
+
+
+
+
+
+
+/*************************
+     Header Css Start
+ ************************/
+
+
+.header-section {
+
+    width: 100%;
+    background: #F0FFF0;
+    padding: 20px 0px;
+
+}
+
+.header-section .navbar {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.header-section .navbar .logo {
+
+    flex-basis: 15%;
+
+}
+
+
+
+.header-section .navbar .logo a img {
+
+    width: 198.07px;
+    height: 59px;
+
+}
+
+
+.header-section .navbar .menu {
+
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header-section .navbar .menu ul {
+
+    margin-top: -14px;
     padding: 0;
 }
 
 
-/* ******************************** 
-***       Header CSS Code     ***
-************************8******* */
-
-header {
-    width: 100%;
-    padding: 20px 0px;
-}
-
-header .logo {
-    float: left;
-    width: 20%;
-}
-
-header .logo img {
-    width: 120px;
-    height: 100%;
-}
-
-header .nav {
-    float: left;
-    width: 60%;
-}
-
-header .nav ul li {
+.header-section .navbar .menu ul li {
 
     list-style-type: none;
     display: inline-block;
-    margin-right: 18px;
-    margin-top: 6px;
-    text-transform: capitalize;
-    font-weight: 550;
+    margin-right: 30px;
+
+
 }
 
-header .btn {
-    float: left;
-    width: 20%;
+
+
+
+
+.header-section .navbar .btn {
+
+    flex-basis: 15%;
+    margin-top: -14px;
+
 }
 
-header .btn button {
-    font-weight: 600;
-    padding: 12px 18px;
-    background: #FA565A;
-    font-size: 16px;
+.header-section .navbar .btn a {
+
+    background: #21B573;
     color: white;
-    /* border: none; */
-    border: 1px solid #FA565A;
-    border-radius: 5px;
+    border: 1px solid #21B573;
+    border-radius: 35px;
+    padding: 12px 28px;
+
 }
 
-/* ******************************** 
-***       Header CSS Code End    ***
-************************8******* */
+
+
+/*************************
+     Header Css End
+ ************************/
 
 
 
 
-/* ******************************** 
-***       Body CSS Code Start    ***
-************************8******* */
 
 
-.banner-section {
+
+/***************************
+     Banner-Body Css Start
+ ***************************/
+
+.banner {
 
     width: 100%;
-    padding: 130px 0px;
-
+    background: #F0FFF0;
 }
 
-.banner-section .left,
-.banner-section .right {
-
-    float: left;
-    width: 50%;
-
-}
-
-.banner-section .left h1 {
-
-    font-size: 35px;
-    line-height: 45px;
-    text-transform: capitalize;
-    margin-top: 65px;
-}
-
-
-.banner-section .left p {
-
-    margin-top: 30px;
-    color: rgba(0, 0, 0, 0.486);
-    margin-bottom: 40px;
-}
-
-.banner-section .left ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
-    background: #184ab6;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align-last: center;
-    border-radius: 50%;
-    border: 1px solid #184ab6;
-    transition: 0.5s;
-
-}
-
-.banner-section .left ul li:hover {
-
-    background: transparent;
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-
-
-.banner-section .left ul li i {
-
-    margin-top: 13px;
-    color: white;
-    font-size: 25px;
-    transition: 0.5s;
-}
-
-
-.banner-section .left ul li:hover i {
-
-    color: #184ab6;
-    transition: 0.5s;
-    transform: rotate(360deg);
-}
-
-
-
-
-.banner-section .right img {
-
-    width: 96%;
-    height: 100%;
-
-}
-
-
-.projects-section {
-
-    width: 100%;
-    clear: both;
-    padding: 400px 0px;
-}
-
-
-
-
-
-.projects-section {
-
-    width: 100%;
-    padding: 400px 0px;
-    clear: both;
-}
-
-.projects-section .title {
-
-    text-align: center;
-}
-
-.projects-section .title p {
-
-    font-size: 14px;
-    font-style: italic;
-    color: rgb(153, 158, 161);
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-
-.projects {
-    display: flex
-}
-
-
-.projects .catagory {
-    margin: 25px 10px;
-    text-align: center;
-}
-
-
-.projects .catagory img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-
-
-
-.line-section{
-
-    width: 100%;
-    padding: 100px 0px;
-}
-
-.line-section .line{
-
-    width: 50px;
-    height: 3px;
-    background: #00000059;
-    margin: auto;
-    transform: rotate(90deg);
-   
-    margin-top: -150px;
-}
-
-
-
-
-
-
-
-.feature-section .title {
-
-    text-align: center;
-}
-
-.feature-section .title p {
-
-    font-size: 14px;
-    font-style: italic;
-    color: rgb(153, 158, 161);
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-
-.feature-section .features {
-
-    justify-content: center;
+.banner .banner-inner {
     display: flex;
 
 }
 
+.banner .banner-inner .content {
+
+    flex-basis: 50%;
+
+    padding-top: 73px;
+    padding-bottom: 70px;
+}
 
 
-.feature-section .features .card {
+.banner .banner-inner .content span {
 
-    background: #eee;
+    color: #FD511A;
+
+}
+
+
+.banner .banner-inner .content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+
+
+
+}
+
+
+
+.banner .banner-inner .content h1 span {
+
+    color: #21B573;
+
+}
+
+.banner .banner-inner .content p {
+
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 403;
+    margin-top: 20px;
+
+}
+
+
+
+.banner .banner-inner .content .banner-btn {
+
+    margin-top: 45px;
+}
+
+
+
+
+.banner .banner-inner .content .banner-btn a {
+
+    background: #21B573;
+    color: white;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 12px 28px;
+
+}
+
+
+
+
+.banner .banner-inner .image-part {
+
+    flex-basis: 50%;
+}
+
+.banner .banner-inner .image-part img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+/*************************
+     Banner-Body Css End
+ ************************/
+
+
+/*************************
+     Feature-Body Css start
+ **************************/
+
+
+
+
+.feature {
+
+    width: 100%;
+    padding: 50px;
+
+}
+
+
+.feature .feature-inner {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
-    padding: 30px 20px;
-    margin: 20px;
+
+
+}
+
+.feature .feature-inner .f-box {
+
+
+
+    padding: 50px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+
+
+.feature .feature-inner .f-box:hover {
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, .10);
+    transition: 0.3s;
+
+}
+
+
+
+
+.feature .feature-inner .f-box img {
+    width: 66px;
+    height: 85px;
+
+}
+
+.feature .feature-inner .f-box h4 {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+}
+
+.feature .feature-inner .f-box p {}
+
+
+
+
+/*************************
+     Feature-Body Css end
+ **************************/
+
+
+
+
+
+
+/*************************
+     Courses-Body Css start
+ **************************/
+
+
+.courses {
+
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.courses .title h2 {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 64px;
+
+}
+
+
+.courses .courses-inner {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.courses .courses-inner .c-card {
+
+    padding: 25px;
+    margin: 0px 10px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .10);
+}
+
+
+.courses .courses-inner .c-card img {
+
+    width: 331px;
+    height: 234px;
+
+}
+
+.courses .courses-inner .c-card h3 {
+
+    color: #413960;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+
+}
+
+
+.courses .courses-inner .c-card p {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #585859;
+    margin-bottom: 25px;
+}
+
+
+
+
+.courses .courses-inner .c-card .c-btn a {
+
+    background: #21B573;
+    color: white;
+    border: 1px solid #21B573;
+    border-radius: 33px;
+    padding: 8px 28px;
+
+
+
+}
+
+
+
+.courses .courses-inner .c-card .c-footer {
+
+
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 50px;
+    color: #585859;
+}
+
+
+.courses .courses-inner .c-card .c-footer .left {}
+
+.courses .courses-inner .c-card .c-footer .left img {
+
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+
+
+}
+
+.courses .courses-inner .c-card .c-footer .left span {}
+
+
+
+
+.courses .courses-inner .c-card .c-footer .right {
+
+    padding-left: 60px;
+
+}
+
+
+.courses .courses-inner .c-card .c-footer .right img {
+
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+
+}
+
+.courses .courses-inner .c-card .c-footer .right span {}
+
+
+/*************************
+     Courses-Body Css end
+ **************************/
+
+
+/*****************************
+     testimonial-Body Css start
+ ******************************/
+
+
+
+.testimonial {}
+
+.testimonial .container {}
+
+.testimonial .container .title h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 64px;
+
+}
+
+.testimonial .container .testimonial-inner {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.testimonial .container .testimonial-inner span img {
+
+    /* position: absolute; */
+    width: 120px;
+    height: 120px;
+    left: 353px;
+    top: 1787px;
+    border-radius: 50px;
+    background: (jpg) #C4C4C4;
+
+
+}
+
+.testimonial .container .testimonial-inner span p {
+
+    /* position: absolute; */
+    width: 583px;
+    height: 90px;
+    left: 525px;
+    top: 1796px;
+
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #000000;
+
+
+
+
+}
+
+
+
+
+
+/*****************************
+     testimonial-Body Css end
+ ******************************/
+
+
+
+
+/*****************************
+     footer Css start
+ ******************************/
+
+
+.footer {
+
+    background: #282531;
+    margin-top: 90px;
+}
+
+
+.footer .container {
+
+    background: #282531;
+
+}
+
+
+
+.footer .container .footer-inner {
+
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+
+    padding: 20px;
+    padding-top: 44px;
+
+}
+
+
+
+.footer .container .footer-inner p {
+
+
+    color: white;
+}
+
+
+.footer .container .footer-inner ul li {
+
+
+    list-style-type: none;
+
+    line-height: 30px;
+}
+
+.footer .container .footer-inner ul li h5 {
+
+    font-weight: 700;
+    list-style-type: none;
+    font-size: 18px;
+    display: inline-block;
+
+
+}
+
+
+.footer .container .footer-copyright {
+
+    background: #282531;
+
+}
+
+
+.footer .container .footer-copyright p{
+
+    color: #CDCDCD; 
+    padding-top: 80px;
+    padding-bottom: 40px ;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
     
 
-
-}
-
-
-
-.feature-section .features .card i {
-
-    background: white;
-    color: red;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
-
-}
-
-
-.feature-section .features .card h4 {
-
-
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: rgb(85, 80, 80);
-
-}
-
-.feature-section .features .card p {
-
-    color: rgb(153, 158, 161);
-
-
 }
 
 
@@ -321,88 +610,15 @@ header .btn button {
 
 
 
-/* ******************************** 
-***       Body CSS Code End    ***
-************************8******* */
 
 
 
 
-/* ******************************** 
-***       Footer CSS Code     ***
-************************8******* */
 
 
-.footer-section {
-
-    background: #28244b;
-
-}
 
 
-.footer-section .container {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    margin-top: 30px;
 
-}
-
-
-.footer-section .container .title h2 {
-    font-size: 35px;
-    font-weight: 800;
-    color: white;
-}
-
-
-.footer-section .container .btn {
-
-    padding-bottom: 10px;
-}
-
-
-.footer-section .container .btn button {
-
-
-    font-weight: 600;
-    padding: 20px 18px;
-    margin: 20px 20px;
-    background: #FA565A;
-    font-size: 16px;
-    color: white;
-    /* border: none; */
-    border: 1px solid #FA565A;
-    border-radius: 5px;
-
-
-}
-
-.footer-section .container .logo {
-
-    height: 80%;
-    width: auto;
-    padding-top: 10px;
-
-}
-
-.footer-section .container .card {
-
-    background: rgb(99, 94, 94);
-    color: rgb(36, 35, 35);
-    height: 25px;
-    width: 25px;
-    line-height: 25px;
-    border-radius: 50%;
-    font-size: 20px;
-
-
-    float: right;
-
-}
-
-.footer-section .container .card i {
-
-    font-size: 20px;
-
-}
+/*****************************
+     footer Css end
+ ******************************/
